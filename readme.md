@@ -28,3 +28,6 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+
+## Disclaimer
+There are some adaptations of what was changed by the aliexpress vendor on its [private repository](https://github.com/Keycoon/zmk-config-totem)
