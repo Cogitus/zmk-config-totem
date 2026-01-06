@@ -70,16 +70,16 @@
          &kp Q                 &kp W           &kp E               &kp R            &kp T          &kp Y        &kp U             &kp I                 &kp O                &kp P
          &HMLeft LEFT_SHIFT A  &HMLeft LWIN S  &HMLeft LEFT_ALT D  &HMLeft LCTRL F  &kp G          &kp H        &HMRight RCTRL J  &HMRight RIGHT_ALT K  &HMRight LEFT_WIN L  &HMRight RIGHT_SHIFT SEMICOLON
 &kp ESC  &kp Z                 &kp X           &kp C               &kp V            &kp B          &kp N        &kp M             &kp COMMA             &kp DOT              &kp FSLH                        &SingleQuoteTD
-                                               &kp LGUI            &mo 2            &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER       &kp BACKSPACE
+                                               &mo 3               &lt 2 LEFT_WIN   &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER       &kp BACKSPACE
             >;
         };
 
         nav_num {
             bindings = <
-                   &kp N1            &kp N2        &kp N3     &kp N4         &kp N5                &kp N6          &kp N7           &kp N8        &kp N9           &kp N0
-                   &none             &kp LEFT      &kp DOWN   &kp RIGHT      &none                 &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp N4
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)  &kp LG(LEFT)  &kp ENTER  &kp LG(RIGHT)  &kp LG(DOWN_ARROW)    &kp PERIOD      &kp PLUS         &kp MINUS     &kp STAR         &kp FSLH  &kp CARET
-                                                   &trans     &trans         &trans                &kp EQUAL       &kp RIGHT_SHIFT  &kp PERCENT
+       &kp N1          &kp N2    &kp N3        &kp N4     &kp N5    &kp N6          &kp N7           &kp N8        &kp N9           &kp N0
+       &kp LEFT_SHIFT  &kp LWIN  &kp LEFT_ALT  &kp LCTRL  &none     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp N4
+&none  &none           &none     &none         &none      &none     &kp PERIOD      &kp PLUS         &kp MINUS     &kp STAR         &kp FSLH  &kp CARET
+                                 &trans        &trans     &trans    &kp EQUAL       &kp RIGHT_SHIFT  &kp PERCENT
             >;
         };
 
@@ -94,10 +94,10 @@
 
         device {
             bindings = <
-       &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_PLAY_PAUSE  &none    &none         &none         &none         &none         &none
-&none  &none       &none                 &none                 &none             &none    &none         &none         &none         &none         &none         &bt BT_CLR
-                                         &none                 &none             &none    &none         &none         &none
+       &none  &none  &none  &none  &kp C_VOLUME_UP      &kp C_BRIGHTNESS_INC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+       &none  &none  &none  &none  &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &bt BT_NXT    &bt BT_PRV    &bt BT_CLR    &none
+&none  &none  &none  &none  &none  &kp K_MUTE           &none                 &none         &none         &none         &none         &bt BT_SEL 4
+                     &none  &none  &none                &none                 &none         &none
             >;
         };
 
@@ -111,7 +111,7 @@
 
         device {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 };
