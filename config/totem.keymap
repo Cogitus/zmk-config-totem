@@ -65,6 +65,36 @@
             bindings = <&kp ESC>;
             key-positions = <10 20>;
         };
+
+        LParenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 14>;
+        };
+
+        RParenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <15 16>;
+        };
+
+        LCBracket {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <3 4>;
+        };
+
+        RCBracket {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <5 6>;
+        };
+
+        LSBracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <24 25>;
+        };
+
+        RSBracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
