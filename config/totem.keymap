@@ -112,7 +112,7 @@
            &kp Q                 &kp W           &kp E               &kp R            &kp T          &kp Y        &kp U             &kp I                 &kp O                &kp P
            &HMLeft LEFT_SHIFT A  &HMLeft LWIN S  &HMLeft LEFT_ALT D  &HMLeft LCTRL F  &kp G          &kp H        &HMRight RCTRL J  &HMRight RIGHT_ALT K  &HMRight LEFT_WIN L  &HMRight RIGHT_SHIFT SEMICOLON
 &kp GRAVE  &kp Z                 &kp X           &kp C               &kp V            &kp B          &kp N        &kp M             &kp COMMA             &kp DOT              &kp FSLH                        &SingleQuoteTD
-                                                 &mo 3               &lt 2 LEFT_WIN   &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER       &lt 3 BACKSPACE
+                                                 &lt 3 TAB           &lt 2 LEFT_WIN   &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER       &lt 3 BACKSPACE
             >;
         };
 
@@ -121,7 +121,7 @@
        &kp N1          &kp N2    &kp N3        &kp N4     &kp N5    &kp N6          &kp N7          &kp N8        &kp N9           &kp N0
        &kp LEFT_SHIFT  &kp LWIN  &kp LEFT_ALT  &kp LCTRL  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp N4
 &none  &none           &none     &none         &none      &none     &kp PERIOD      &kp DEL         &kp MINUS     &kp STAR         &kp FSLH  &kp CARET
-                                 &trans        &trans     &trans    &kp EQUAL       &kp PLUS        &kp PERCENT
+                                 &trans        &trans     &trans    &kp EQUAL       &kp PLUS        &kp DEL
             >;
         };
 
