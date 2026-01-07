@@ -69,31 +69,37 @@
         LParenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <13 12>;
+            require-prior-idle-ms = <150>;
         };
 
         RParenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <16 17>;
+            require-prior-idle-ms = <150>;
         };
 
         LCBracket {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <3 2>;
+            require-prior-idle-ms = <150>;
         };
 
         RCBracket {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <6 7>;
+            require-prior-idle-ms = <150>;
         };
 
         LSBracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <24 23>;
+            require-prior-idle-ms = <150>;
         };
 
         RSBracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <27 28>;
+            require-prior-idle-ms = <150>;
         };
     };
 
