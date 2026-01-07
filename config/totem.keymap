@@ -68,32 +68,32 @@
 
         LParenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
         };
 
         RParenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
 
         LCBracket {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
         };
 
         RCBracket {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
         };
 
         LSBracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <24 25>;
+            key-positions = <24 23>;
         };
 
         RSBracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
         };
     };
 
