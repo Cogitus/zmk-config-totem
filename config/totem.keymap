@@ -26,6 +26,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
             hold-trigger-on-release;
             flavor = "tap-preferred";
+            quick-tap-ms = <175>;
         };
 
         HMLeft: HMLeft {
@@ -38,6 +39,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
             flavor = "tap-preferred";
+            quick-tap-ms = <175>;
         };
 
         SingleQuoteTD: SingleQuoteTD {
