@@ -114,6 +114,7 @@
         AltTabM {
             bindings = <&AltTab>;
             key-positions = <13 33>;
+            timeout-ms = <35>;
         };
     };
 
