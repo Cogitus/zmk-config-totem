@@ -16,9 +16,8 @@
 
 / {
     behaviors {
-        HMRight: HMRight {
+        HMRight: home_row_mode_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMRIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -29,9 +28,8 @@
             quick-tap-ms = <175>;
         };
 
-        HMLeft: HMLeft {
+        HMLeft: home_row_mode_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMLEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
