@@ -49,7 +49,7 @@
         HMShiftL: home_row_shift_mode_left {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
-
+            flavor = "hold-preferred";
             #binding-cells = <2>;
             quick-tap-ms = <175>;
             hold-trigger-key-positions = <9 15 18 19 26 27 28 29 30 31 35 36 37 5 6 7 8 9 15 16 17 18 19 28>;
@@ -60,7 +60,7 @@
         HMShiftR: home_row_shift_mode_right {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
-
+            flavor = "hold-preferred";
             #binding-cells = <2>;
             quick-tap-ms = <175>;
             hold-trigger-on-release;
