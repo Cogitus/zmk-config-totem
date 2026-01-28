@@ -40,9 +40,8 @@
             quick-tap-ms = <175>;
         };
 
-        SingleQuoteTD: SingleQuoteTD {
+        SingleQuoteTD: single_quote_tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "SINGLEQUOTETD";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
