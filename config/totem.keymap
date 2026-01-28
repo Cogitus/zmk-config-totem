@@ -49,6 +49,7 @@
         HMShiftL: home_row_shift_mode_left {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
+
             flavor = "balanced";
             #binding-cells = <2>;
             quick-tap-ms = <175>;
@@ -60,6 +61,7 @@
         HMShiftR: home_row_shift_mode_right {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
+
             flavor = "balanced";
             #binding-cells = <2>;
             quick-tap-ms = <175>;
@@ -126,7 +128,7 @@
 
         underscoreCombo {
             bindings = <&kp UNDER>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
             layers = <1>;
         };
 
