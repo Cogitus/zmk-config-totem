@@ -137,6 +137,11 @@
             key-positions = <13 33>;
             timeout-ms = <35>;
         };
+
+        profileLayer {
+            bindings = <&sl 4>;
+            key-positions = <21 30 22 29>;
+        };
     };
 
     macros {
@@ -185,21 +190,21 @@
             >;
         };
 
-        device {
-            bindings = <
-       &none  &none  &none  &none  &kp C_VOLUME_UP      &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-       &none  &none  &none  &none  &kp C_VOLUME_DOWN    &none  &bt BT_NXT    &bt BT_PRV    &bt BT_CLR    &none
-&none  &none  &none  &none  &none  &kp C_MUTE           &none  &none         &none         &none         &none         &bt BT_SEL 4
-                     &none  &none  &none                &none  &none         &none
-            >;
-        };
-
         navigation {
             bindings = <
         &trans  &trans  &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp PAGE_UP    &trans    &trans   &trans  &trans
         &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp PAGE_DOWN  &kp HOME  &kp END  &trans  &trans
 &trans  &trans  &trans  &trans  &kp C_MUTE         &none                   &trans         &trans    &trans   &trans  &trans  &trans
                         &trans  &trans             &trans                  &trans         &trans    &trans
+            >;
+        };
+
+        profile_management {
+            bindings = <
+       &none  &none  &none  &none  &none    &bt BT_NXT  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none
+       &none  &none  &none  &none  &none    &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
+&none  &none  &none  &none  &none  &none    &none       &none         &none           &none         &none         &bt BT_SEL 4
+                     &none  &none  &none    &none       &none         &none
             >;
         };
     };
