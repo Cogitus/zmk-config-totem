@@ -167,19 +167,19 @@
 
         base {
             bindings = <
-           &kp Q                   &kp W           &kp E               &kp R            &kp T          &kp Y        &kp U             &kp I                 &kp O                &kp P
-           &HMShiftL LEFT_SHIFT A  &HMLeft LWIN S  &HMLeft LEFT_ALT D  &HMLeft LCTRL F  &kp G          &kp H        &HMRight RCTRL J  &HMRight RIGHT_ALT K  &HMRight LEFT_WIN L  &HMShiftR RIGHT_SHIFT SEMICOLON
-&kp GRAVE  &kp Z                   &kp X           &kp C               &kp V            &kp B          &kp N        &kp M             &kp COMMA             &kp DOT              &kp FSLH                         &SingleQuoteTD
-                                                   &lt 3 LEFT_WIN      &lt 2 TAB        &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER       &lt 3 BACKSPACE
+           &kp Q                 &kp W           &kp E            &kp R                 &kp T          &kp Y        &kp U                   &kp I             &kp O                &kp P
+           &HMShiftL LEFT_ALT A  &HMLeft LWIN S  &HMLeft LCTRL D  &HMLeft LEFT_SHIFT F  &kp G          &kp H        &HMRight RIGHT_SHIFT J  &HMRight RCTRL K  &HMRight LEFT_WIN L  &HMShiftR RIGHT_ALT SEMICOLON
+&kp GRAVE  &kp Z                 &kp X           &kp C            &kp V                 &kp B          &kp N        &kp M                   &kp COMMA         &kp DOT              &kp FSLH                       &SingleQuoteTD
+                                                 &lt 3 LEFT_WIN   &lt 2 TAB             &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER             &lt 3 BACKSPACE
             >;
         };
 
         nav_num {
             bindings = <
-       &kp N1          &kp N2    &kp N3        &kp N4     &kp N5    &kp N6          &kp N7          &kp N8            &kp N9           &kp N0
-       &kp LEFT_SHIFT  &kp LWIN  &kp LEFT_ALT  &kp LCTRL  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &kp MINUS
-&none  &none           &none     &none         &none      &none     &none           &kp LESS_THAN   &kp GREATER_THAN  &none            &kp BACKSLASH  &kp DOUBLE_QUOTES
-                                 &trans        &trans     &trans    &trans          &trans          &kp DEL
+       &kp N1        &kp N2    &kp N3     &kp N4          &kp N5    &kp N6          &kp N7          &kp N8            &kp N9           &kp N0
+       &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &kp LEFT_SHIFT  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &kp MINUS
+&none  &none         &none     &none      &none           &none     &none           &kp LESS_THAN   &kp GREATER_THAN  &none            &kp BACKSLASH  &kp DOUBLE_QUOTES
+                               &trans     &trans          &trans    &trans          &trans          &kp DEL
             >;
         };
 
