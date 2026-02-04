@@ -42,12 +42,6 @@
             quick-tap-ms = <175>;
         };
 
-        SingleQuoteTD: single_quote_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
-        };
-
         HMShiftL: home_row_shift_mode_left {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -70,6 +64,13 @@
             hold-trigger-on-release;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+        };
+
+        gamming_switch: gamming_switch {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GAMMING_SWITCH";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&to 4>;
         };
     };
 
@@ -144,6 +145,11 @@
             bindings = <&sl 4>;
             key-positions = <21 30 22 29>;
         };
+
+        gammingMode {
+            bindings = <&gamming_switch>;
+            key-positions = <20 31>;
+        };
     };
 
     macros {
@@ -169,7 +175,7 @@
             bindings = <
            &kp Q                 &kp W           &kp E            &kp R                 &kp T          &kp Y        &kp U                   &kp I             &kp O                &kp P
            &HMShiftL LEFT_ALT A  &HMLeft LWIN S  &HMLeft LCTRL D  &HMLeft LEFT_SHIFT F  &kp G          &kp H        &HMRight RIGHT_SHIFT J  &HMRight RCTRL K  &HMRight LEFT_WIN L  &HMShiftR RIGHT_ALT SEMICOLON
-&kp GRAVE  &kp Z                 &kp X           &kp C            &kp V                 &kp B          &kp N        &kp M                   &kp COMMA         &kp DOT              &kp FSLH                       &SingleQuoteTD
+&kp GRAVE  &kp Z                 &kp X           &kp C            &kp V                 &kp B          &kp N        &kp M                   &kp COMMA         &kp DOT              &kp FSLH                       &kp SINGLE_QUOTE
                                                  &lt 3 LEFT_WIN   &lt 2 TAB             &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER             &lt 3 BACKSPACE
             >;
         };
@@ -207,6 +213,24 @@
        &none  &none  &none  &none  &none    &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
 &none  &none  &none  &none  &none  &none    &none       &none         &none           &none         &none         &bt BT_SEL 4
                      &none  &none  &none    &none       &none         &none
+            >;
+        };
+
+        gamming {
+            bindings = <
+        &kp TAB         &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
+        &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL       &kp Z  &kp C  &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &none
+                               &none  &mo 5  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        gamming_num {
+            bindings = <
+        &none         &kp N1  &kp N2  &kp N3        &kp T     &trans  &trans  &trans  &trans  &trans
+        &kp ESC       &kp N4  &kp N5  &kp NUMBER_6  &kp G     &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3        &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans        &trans    &trans  &trans  &trans
             >;
         };
     };
