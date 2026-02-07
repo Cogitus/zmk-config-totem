@@ -71,6 +71,7 @@
             label = "GAMMING_SWITCH";
             #binding-cells = <0>;
             bindings = <&to 0>, <&to 4>;
+        };
 
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
