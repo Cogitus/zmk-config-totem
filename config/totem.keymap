@@ -78,6 +78,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <13 15 16 17 18 33 34 35>;
+            ignored-layers = <1>;
         };
     };
 
