@@ -200,7 +200,7 @@
         sym_func {
             bindings = <
         &kp F2    &kp F3  &kp F4    &kp F5      &kp F6         &kp F7     &kp F8           &kp F9        &kp F10  &kp F11
-        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND    &kp ASTERISK  &none    &kp PIPE
+        &HMShiftL LEFT_ALT EXCL  &HMLeft LWIN AT  &HMLeft LCTRL HASH  &HMLeft LEFT_SHIFT DOLLAR  &kp PERCENT    &kp CARET  &HMRight RIGHT_SHIFT AMPERSAND  &HMRight RCTRL ASTERISK  &kp LEFT_WIN  &HMShiftR RIGHT_ALT PIPE
 &kp F1  &none     &none   &none     &none       &none          &none      &kp PLUS         &kp EQUAL     &none    &none     &kp F12
                           &trans    &trans      &trans         &none      &kp RIGHT_SHIFT  &none
             >;
