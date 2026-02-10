@@ -184,7 +184,7 @@
             bindings = <
            &kp Q               &kp W           &kp E            &kp R                   &kp T          &kp Y        &kp U                    &kp I             &kp O                &kp P
            &HMLeft LEFT_ALT A  &HMLeft LWIN S  &HMLeft LCTRL D  &HMShiftL LEFT_SHIFT F  &kp G          &kp H        &HMShiftR RIGHT_SHIFT J  &HMRight RCTRL K  &HMRight LEFT_WIN L  &HMRight LEFT_ALT SEMICOLON
-&kp GRAVE  &kp Z               &kp X           &kp C            &kp V                   &kp B          &kp N        &kp M                    &kp COMMA         &kp DOT              &kp FSLH                      &kp SINGLE_QUOTE
+&kp GRAVE  &kp Z               &kp X           &kp C            &kp V                   &kp B          &kp N        &kp M                    &kp COMMA         &kp DOT              &kp FSLH                     &kp SINGLE_QUOTE
                                                &lt 3 LEFT_WIN   &lt 2 TAB               &lt 1 SPACE    &lt 1 SPACE  &lt 2 ENTER              &lt 3 BACKSPACE
             >;
         };
@@ -202,7 +202,7 @@
             bindings = <
         &kp F2                 &kp F3           &kp F4              &kp F5                       &kp F6         &kp F7     &kp F8                           &kp F9                   &kp F10       &kp F11
         &HMLeft LEFT_ALT EXCL  &HMLeft LWIN AT  &HMLeft LCTRL HASH  &HMShiftL LEFT_SHIFT DOLLAR  &kp PERCENT    &kp CARET  &HMShiftR RIGHT_SHIFT AMPERSAND  &HMRight RCTRL ASTERISK  &kp LEFT_WIN  &HMRight LEFT_ALT PIPE
-&kp F1  &none                  &none            &none               &none                        &none          &none      &kp PLUS                         &kp EQUAL                &none         &none                    &kp F12
+&kp F1  &none                  &none            &none               &none                        &none          &none      &kp PLUS                         &kp EQUAL                &none         &none                   &kp F12
                                                 &trans              &trans                       &trans         &trans     &trans                           &trans
             >;
         };
@@ -236,7 +236,7 @@
 
         gamming_num {
             bindings = <
-        &none         &kp N1  &kp N2  &kp N3        &kp T     &trans  &trans  &trans  &trans  &trans
+        &swapper      &kp N1  &kp N2  &kp N3        &kp T     &trans  &trans  &trans  &trans  &trans
         &kp ESC       &kp N4  &kp N5  &kp NUMBER_6  &kp G     &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3        &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                               &trans  &trans        &trans    &trans  &trans  &trans
