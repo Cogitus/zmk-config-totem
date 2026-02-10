@@ -227,19 +227,19 @@
 
         gamming {
             bindings = <
-        &kp TAB         &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-        &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL       &kp Z  &kp C  &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &none
-                               &none  &mo 5  &kp SPACE    &trans  &trans  &trans
+        &kp TAB         &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none
+        &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none
+&trans  &kp LCTRL       &kp Z  &kp C  &kp V  &kp B        &none  &none  &none  &none  &none  &none
+                               &none  &mo 5  &kp SPACE    &none  &none  &none
             >;
         };
 
         gamming_num {
             bindings = <
-        &swapper      &kp N1  &kp N2  &kp N3        &kp T     &trans  &trans  &trans  &trans  &trans
-        &kp ESC       &kp N4  &kp N5  &kp NUMBER_6  &kp G     &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3        &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans        &trans    &trans  &trans  &trans
+        &swapper      &kp N1  &kp N2  &kp N3        &kp T     &none  &none  &none  &none  &none
+        &kp ESC       &kp N4  &kp N5  &kp NUMBER_6  &kp G     &none  &none  &none  &none  &none
+&trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3        &kp B     &none  &none  &none  &none  &none  &none
+                              &trans  &trans        &trans    &none  &none  &none
             >;
         };
     };
