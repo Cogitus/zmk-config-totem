@@ -159,11 +159,6 @@
             bindings = <&gamming_switch>;
             key-positions = <20 31>;
         };
-
-        resetProfiles {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <21 22 23 32>;
-        };
     };
 
     macros {
