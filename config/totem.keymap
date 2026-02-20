@@ -66,13 +66,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
         };
 
-        gamming_switch: gamming_switch {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GAMMING_SWITCH";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&to 4>;
-        };
-
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
@@ -156,7 +149,7 @@
         };
 
         gammingMode {
-            bindings = <&gamming_switch>;
+            bindings = <&tog 5>;
             key-positions = <20 31>;
         };
     };
