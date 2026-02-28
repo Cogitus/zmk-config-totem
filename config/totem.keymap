@@ -177,7 +177,7 @@
             bindings = <
            &kp Q               &kp W           &kp E            &kp R                   &kp T          &kp Y        &kp U                    &kp I             &kp O                &kp P
            &HMLeft LEFT_ALT A  &HMLeft LWIN S  &HMLeft LCTRL D  &HMShiftL LEFT_SHIFT F  &kp G          &kp H        &HMShiftR RIGHT_SHIFT J  &HMRight RCTRL K  &HMRight LEFT_WIN L  &HMRight LEFT_ALT SEMICOLON
-&kp GRAVE  &kp Z               &kp X           &kp C            &kp V                   &kp B          &kp N        &kp M                    &kp COMMA         &kp DOT              &kp FSLH                     &kp SINGLE_QUOTE
+&kp GRAVE  &kp Z               &kp X           &kp C            &kp V                   &kp B          &kp N        &kp M                    &kp COMMA         &kp DOT              &kp FSLH                     &kp SQT
                                                &lt 3 LEFT_WIN   &lt 2 TAB               &lt 1 SPACE    &lt 1 SPACE  &mo 2                    &lt 3 BACKSPACE
             >;
         };
@@ -186,7 +186,7 @@
             bindings = <
        &kp N1        &kp N2    &kp N3     &kp N4          &kp N5    &kp N6          &kp N7          &kp N8            &kp N9           &kp N0
        &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &kp LEFT_SHIFT  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &kp MINUS
-&none  &none         &none     &none      &none           &none     &none           &kp LESS_THAN   &kp GREATER_THAN  &none            &kp BACKSLASH  &kp DOUBLE_QUOTES
+&none  &none         &none     &none      &none           &none     &none           &kp LESS_THAN   &kp GREATER_THAN  &none            &kp BACKSLASH  &kp DQT
                                &trans     &trans          &trans    &trans          &trans          &kp DEL
             >;
         };
@@ -233,6 +233,15 @@
         &kp ESC       &kp N4  &kp N5  &kp NUMBER_6  &kp G     &none  &none  &none  &none  &none
 &trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3        &kp B     &none  &none  &none  &none  &none  &none
                               &trans  &trans        &trans    &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
