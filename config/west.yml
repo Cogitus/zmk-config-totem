@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -14,5 +16,8 @@ manifest:
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: feat/new-status-screens
   self:
     path: config
