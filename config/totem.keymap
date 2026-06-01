@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &lt { quick-tap-ms = <175>; };
 
@@ -152,6 +153,18 @@
             bindings = <&tog 5>;
             key-positions = <20 31>;
         };
+
+        printRight {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <16 17 18 19>;
+            layers = <1>;
+        };
+
+        printLeft {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <10 11 12 13>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -174,24 +187,27 @@
         compatible = "zmk,keymap";
 
         base {
+            display-name = "Base";
             bindings = <
            &kp Q               &kp W           &kp E            &kp R                   &kp T          &kp Y        &kp U                    &kp I             &kp O                &kp P
            &HMLeft LEFT_ALT A  &HMLeft LWIN S  &HMLeft LCTRL D  &HMShiftL LEFT_SHIFT F  &kp G          &kp H        &HMShiftR RIGHT_SHIFT J  &HMRight RCTRL K  &HMRight LEFT_WIN L  &HMRight LEFT_ALT SEMICOLON
-&kp GRAVE  &kp Z               &kp X           &kp C            &kp V                   &kp B          &kp N        &kp M                    &kp COMMA         &kp DOT              &kp FSLH                     &kp SQT
-                                               &lt 3 LEFT_WIN   &lt 2 TAB               &lt 1 SPACE    &lt 1 SPACE  &lt 2 RIGHT_WIN          &lt 3 BACKSPACE
+&kp GRAVE  &kp Z               &kp X           &kp C            &kp V                   &kp B          &kp N        &kp M                    &kp COMMA         &kp DOT              &kp FSLH                     &kp SINGLE_QUOTE
+                                               &lt 3 LEFT_WIN   &lt 2 TAB               &lt 1 SPACE    &lt 1 SPACE  &mo 2                    &lt 3 BACKSPACE
             >;
         };
 
         nav_num {
+            display-name = "Nav/Num";
             bindings = <
        &kp N1        &kp N2    &kp N3     &kp N4          &kp N5    &kp N6          &kp N7          &kp N8            &kp N9           &kp N0
        &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &kp LEFT_SHIFT  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &kp MINUS
-&none  &none         &none     &none      &none           &none     &none           &kp LESS_THAN   &kp GREATER_THAN  &none            &kp BACKSLASH  &kp DQT
+&none  &none         &none     &none      &none           &none     &none           &kp LESS_THAN   &kp GREATER_THAN  &none            &kp BACKSLASH  &kp DOUBLE_QUOTES
                                &trans     &trans          &trans    &trans          &trans          &kp DEL
             >;
         };
 
         sym_func {
+            display-name = "Sym/Fn";
             bindings = <
         &kp F2                 &kp F3           &kp F4              &kp F5                       &kp F6         &kp F7     &kp F8                           &kp F9                   &kp F10       &kp F11
         &HMLeft LEFT_ALT EXCL  &HMLeft LWIN AT  &HMLeft LCTRL HASH  &HMShiftL LEFT_SHIFT DOLLAR  &kp PERCENT    &kp CARET  &HMShiftR RIGHT_SHIFT AMPERSAND  &HMRight RCTRL ASTERISK  &kp LEFT_WIN  &HMRight LEFT_ALT PIPE
@@ -201,6 +217,7 @@
         };
 
         navigation {
+            display-name = "Media";
             bindings = <
         &trans  &trans  &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp PAGE_UP    &trans    &trans   &trans  &trans
         &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp PAGE_DOWN  &kp HOME  &kp END  &trans  &trans
@@ -210,38 +227,32 @@
         };
 
         profile_management {
+            display-name = "BT";
             bindings = <
-       &none  &none  &none  &none  &none    &bt BT_NXT  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none
-       &none  &none  &none  &none  &none    &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
-&none  &none  &none  &none  &none  &none    &none       &none         &none           &none         &none         &bt BT_SEL 4
-                     &none  &none  &none    &none       &none         &none
+       &none  &none  &none  &none  &none           &bt BT_NXT  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none
+       &none  &none  &none  &none  &none           &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
+&none  &none  &none  &none  &none  &none           &none       &none         &none           &none         &none         &bt BT_SEL 4
+                     &none  &none  &out OUT_TOG    &none       &none         &none
             >;
         };
 
         gamming {
+            display-name = "Game";
             bindings = <
-         &kp TAB         &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none
-         &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none
-&kp ESC  &kp LCTRL       &kp Z  &kp C  &kp V  &kp B        &none  &none  &none  &none  &none  &none
-                                &none  &mo 6  &kp SPACE    &none  &none  &none
+        &kp TAB         &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none
+        &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none
+&trans  &kp LCTRL       &kp Z  &kp C  &kp V  &kp B        &none  &none  &none  &none  &none  &none
+                               &none  &mo 5  &kp SPACE    &none  &none  &none
             >;
         };
 
         gamming_num {
+            display-name = "Game#";
             bindings = <
         &swapper      &kp N1  &kp N2  &kp N3        &kp T     &none  &none  &none  &none  &none
         &kp ESC       &kp N4  &kp N5  &kp NUMBER_6  &kp G     &none  &none  &none  &none  &none
 &trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3        &kp B     &none  &none  &none  &none  &none  &none
                               &trans  &trans        &trans    &none  &none  &none
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
