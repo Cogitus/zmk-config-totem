@@ -153,6 +153,18 @@
             bindings = <&tog 5>;
             key-positions = <20 31>;
         };
+
+        printRight {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <16 17 18 19>;
+            layers = <1>;
+        };
+
+        printLeft {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <10 11 12 13>;
+            layers = <1>;
+        };
     };
 
     macros {
